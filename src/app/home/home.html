@@ -1,321 +1,282 @@
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-content">
+```html
+<main class="home">
 
-        <div class="hero-text">
-          <span class="badge">● THE FUTURE IS HERE</span>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow"></div>
 
-          <h1>
-            Build Something
-            <span>Remarkable.</span>
-          </h1>
+    <div class="container hero-grid">
 
-          <p>
-            Create powerful digital experiences with a clean, modern and
-            minimal design built for ambitious brands.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#pricing" class="btn btn-black">Get Started →</a>
-            <a href="#features" class="btn btn-outline">Explore More</a>
-          </div>
-
-          <div class="trusted">
-            <div class="avatars">
-              <span>J</span>
-              <span>A</span>
-              <span>M</span>
-              <span>S</span>
-            </div>
-            <p>Trusted by <strong>10,000+</strong> creators</p>
-          </div>
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span></span>
+          CREATIVE DIGITAL STUDIO
         </div>
 
-        <div class="hero-card">
-          <div class="card-top">
-            <span>01 / 04</span>
+        <h1>
+          We Create
+          <span>Digital</span>
+          Experiences.
+        </h1>
+
+        <p>
+          We design and develop modern digital experiences that
+          help ambitious brands stand out, connect with their
+          audience and grow.
+        </p>
+
+        <div class="hero-actions">
+          <a routerLink="/services" class="btn-primary">
+            Explore Services
             <span>↗</span>
+          </a>
+
+          <a routerLink="/contact" class="btn-secondary">
+            Let's Talk
+          </a>
+        </div>
+
+        <div class="trusted">
+          <div class="avatars">
+            <span>01</span>
+            <span>02</span>
+            <span>03</span>
           </div>
 
-          <div class="circle-design">
-            <div class="circle-inner"></div>
+          <div>
+            <strong>Trusted by businesses</strong>
+            <small>Turning ideas into digital reality</small>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Hero Visual -->
+      <div class="hero-art">
+
+        <div class="art-circle circle-large"></div>
+        <div class="art-circle circle-small"></div>
+
+        <div class="floating-card card-top">
+          <div class="mini-icon">✦</div>
+          <div>
+            <strong>Creative</strong>
+            <small>Design</small>
+          </div>
+        </div>
+
+        <div class="floating-card card-main">
+          <div class="card-header">
+            <span>BLACKLY</span>
+            <span>01 — 03</span>
           </div>
 
-          <div class="card-bottom">
-            <h3>Minimal.<br>Powerful.</h3>
-            <p>Designed to make an impact.</p>
+          <div class="card-shape">
+            <div class="shape-inner"></div>
+          </div>
+
+          <div class="card-footer">
+            <strong>Digital</strong>
+            <span>Experience</span>
+          </div>
+        </div>
+
+        <div class="floating-card card-bottom">
+          <span class="check">✓</span>
+          <div>
+            <strong>Fast & Reliable</strong>
+            <small>Built for growth</small>
           </div>
         </div>
 
       </div>
-    </section>
 
-    <!-- Logo Strip -->
-    <section class="logos">
-      <div class="container logo-row">
-        <span>VERCEL</span>
-        <span>stripe</span>
-        <span>notion</span>
-        <span>LINEAR</span>
-        <span>Framer</span>
+    </div>
+  </section>
+
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+
+      <div class="stat">
+        <strong>50<span>+</span></strong>
+        <p>Projects Delivered</p>
       </div>
-    </section>
 
-    <!-- Features -->
-    <section class="features section" id="features">
-      <div class="container">
+      <div class="stat">
+        <strong>30<span>+</span></strong>
+        <p>Happy Clients</p>
+      </div>
 
-        <div class="section-heading">
-          <span class="small-title">WHY CHOOSE US</span>
-          <h2>Everything you need.<br><span>Nothing you don't.</span></h2>
+      <div class="stat">
+        <strong>3<span>+</span></strong>
+        <p>Years Experience</p>
+      </div>
+
+      <div class="stat">
+        <strong>24<span>/7</span></strong>
+        <p>Creative Support</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section class="services-preview">
+    <div class="container">
+
+      <div class="section-top">
+        <div>
+          <span class="section-label">OUR EXPERTISE</span>
+          <h2>What we do best.</h2>
+        </div>
+
+        <p>
+          From strategy to execution, we create digital
+          solutions that make an impact.
+        </p>
+      </div>
+
+
+      <div class="services-grid">
+
+        <a routerLink="/services" class="service-card">
+          <div class="service-top">
+            <span>01</span>
+            <div class="service-arrow">↗</div>
+          </div>
+
+          <div>
+            <div class="service-icon">⌘</div>
+            <h3>Web Development</h3>
+            <p>
+              Fast, responsive and scalable websites
+              built around your business.
+            </p>
+          </div>
+        </a>
+
+
+        <a routerLink="/services" class="service-card dark-card">
+          <div class="service-top">
+            <span>02</span>
+            <div class="service-arrow">↗</div>
+          </div>
+
+          <div>
+            <div class="service-icon">✦</div>
+            <h3>UI / UX Design</h3>
+            <p>
+              Beautiful interfaces designed to create
+              meaningful user experiences.
+            </p>
+          </div>
+        </a>
+
+
+        <a routerLink="/services" class="service-card">
+          <div class="service-top">
+            <span>03</span>
+            <div class="service-arrow">↗</div>
+          </div>
+
+          <div>
+            <div class="service-icon">◈</div>
+            <h3>Digital Solutions</h3>
+            <p>
+              Smart solutions that simplify workflows
+              and help businesses grow.
+            </p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="container about-grid">
+
+      <div class="about-number">
+        <span>01</span>
+        <div></div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-label">WHO WE ARE</span>
+
+        <h2>
+          Ideas become
+          <span>experiences.</span>
+        </h2>
+
+        <p>
+          We are a creative digital studio focused on creating
+          thoughtful design and powerful technology. Every
+          project starts with an idea and ends with something
+          people remember.
+        </p>
+
+        <a routerLink="/about" class="text-link">
+          More About Us
+          <span>→</span>
+        </a>
+      </div>
+
+      <div class="about-box">
+        <div class="about-box-inner">
+          <span>BLACKLY</span>
+          <strong>CREATE</strong>
+          <strong>INSPIRE</strong>
+          <strong>GROW</strong>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+
+      <div class="cta-box">
+
+        <div class="cta-content">
+          <span>HAVE AN IDEA?</span>
+
+          <h2>
+            Let's build something
+            <em>remarkable.</em>
+          </h2>
+
           <p>
-            Simple tools. Powerful results. Everything is designed
-            around your workflow.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-
-          <article class="feature-card">
-            <div class="icon">✦</div>
-            <h3>Modern Design</h3>
-            <p>
-              Clean interfaces crafted with attention to every detail,
-              spacing and interaction.
-            </p>
-            <a href="#">Learn more →</a>
-          </article>
-
-          <article class="feature-card dark">
-            <div class="icon">⚡</div>
-            <h3>Lightning Fast</h3>
-            <p>
-              Optimized performance that keeps your website fast,
-              smooth and responsive.
-            </p>
-            <a href="#">Learn more →</a>
-          </article>
-
-          <article class="feature-card">
-            <div class="icon">◉</div>
-            <h3>Fully Responsive</h3>
-            <p>
-              Looks beautiful on every screen, from mobile devices
-              to large desktop displays.
-            </p>
-            <a href="#">Learn more →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about section" id="about">
-      <div class="container about-grid">
-
-        <div class="about-image">
-          <div class="image-box">
-            <span>EST. 2026</span>
-            <strong>01</strong>
-          </div>
-        </div>
-
-        <div class="about-content">
-          <span class="small-title">ABOUT BLACKLY</span>
-
-          <h2>Less noise.<br><span>More impact.</span></h2>
-
-          <p>
-            We believe great design doesn't need to be complicated.
-            Blackly combines simplicity, functionality and bold
-            visual direction to help modern businesses stand out.
+            Tell us about your project and let's turn your
+            vision into a digital experience.
           </p>
 
-          <div class="about-list">
-            <div>
-              <strong>01</strong>
-              <span>Purpose-driven design</span>
-            </div>
-            <div>
-              <strong>02</strong>
-              <span>Built for modern brands</span>
-            </div>
-            <div>
-              <strong>03</strong>
-              <span>Focused on results</span>
-            </div>
-          </div>
+          <a routerLink="/contact" class="cta-button">
+            Start a Project
+            <span>↗</span>
+          </a>
+        </div>
 
-          <a href="#" class="btn btn-black">Our Story →</a>
+        <div class="cta-decoration">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
 
       </div>
-    </section>
 
-    <!-- Stats -->
-    <section class="stats">
-      <div class="container stats-grid">
-        <div>
-          <h3>10K+</h3>
-          <p>Happy Customers</p>
-        </div>
-        <div>
-          <h3>98%</h3>
-          <p>Customer Satisfaction</p>
-        </div>
-        <div>
-          <h3>24/7</h3>
-          <p>Support Available</p>
-        </div>
-        <div>
-          <h3>50+</h3>
-          <p>Countries Reached</p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Pricing -->
-    <section class="pricing section" id="pricing">
-      <div class="container">
+</main>
 
-        <div class="section-heading center">
-          <span class="small-title">SIMPLE PRICING</span>
-          <h2>Choose your <span>plan.</span></h2>
-          <p>Simple pricing with no hidden fees.</p>
-        </div>
 
-        <div class="pricing-grid">
-
-          <div class="price-card">
-            <h3>Starter</h3>
-            <p>For individuals getting started.</p>
-
-            <div class="price">
-              <span>$</span>19 <small>/month</small>
-            </div>
-
-            <ul>
-              <li>✓ 5 Projects</li>
-              <li>✓ Basic Analytics</li>
-              <li>✓ Email Support</li>
-              <li>✓ 5GB Storage</li>
-            </ul>
-
-            <a href="#" class="price-btn">Choose Starter</a>
-          </div>
-
-          <div class="price-card featured">
-            <span class="popular">MOST POPULAR</span>
-            <h3>Pro</h3>
-            <p>For growing businesses.</p>
-
-            <div class="price">
-              <span>$</span>49 <small>/month</small>
-            </div>
-
-            <ul>
-              <li>✓ Unlimited Projects</li>
-              <li>✓ Advanced Analytics</li>
-              <li>✓ Priority Support</li>
-              <li>✓ 100GB Storage</li>
-            </ul>
-
-            <a href="#" class="price-btn white">Choose Pro</a>
-          </div>
-
-          <div class="price-card">
-            <h3>Enterprise</h3>
-            <p>For large organizations.</p>
-
-            <div class="price custom">Custom</div>
-
-            <ul>
-              <li>✓ Unlimited Everything</li>
-              <li>✓ Custom Solutions</li>
-              <li>✓ Dedicated Support</li>
-              <li>✓ Enterprise Security</li>
-            </ul>
-
-            <a href="#" class="price-btn">Contact Us</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials section">
-      <div class="container">
-
-        <div class="section-heading center">
-          <span class="small-title">TESTIMONIALS</span>
-          <h2>Loved by <span>creators.</span></h2>
-        </div>
-
-        <div class="testimonial-grid">
-
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>
-              “Blackly completely changed how our brand looks online.
-              The simplicity and attention to detail are incredible.”
-            </p>
-            <div class="person">
-              <div class="avatar">A</div>
-              <div>
-                <strong>Alex Morgan</strong>
-                <span>Creative Director</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>
-              “Beautiful, fast and incredibly easy to use. Exactly what
-              we needed for our new digital product.”
-            </p>
-            <div class="person">
-              <div class="avatar">S</div>
-              <div>
-                <strong>Sarah Wilson</strong>
-                <span>Founder, Studio X</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>
-              “The perfect balance between minimal design and powerful
-              functionality. Highly recommended.”
-            </p>
-            <div class="person">
-              <div class="avatar">M</div>
-              <div>
-                <strong>Michael Lee</strong>
-                <span>Product Designer</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta" id="contact">
-      <div class="container">
-        <div class="cta-box">
-          <span class="small-title">READY TO START?</span>
-          <h2>Make your next idea<br><span>remarkable.</span></h2>
-          <p>
-            Start building something people will remember.
-          </p>
-          <a href="#" class="btn btn-white">Get Started →</a>
-        </div>
-      </div>
-    </section>
-
-  </main>

@@ -1,0 +1,56 @@
+
+<header class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <a routerLink="/" class="logo">
+      BLACK<span>LY</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-links">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Home
+      </a>
+
+      <a
+        routerLink="/about"
+        routerLinkActive="active">
+        About
+      </a>
+
+      <a
+        routerLink="/services"
+        routerLinkActive="active">
+        Services
+      </a>
+
+      <a
+        routerLink="/contact"
+        routerLinkActive="active">
+        Contact
+      </a>
+    </nav>
+
+    <!-- Right Side -->
+    <div class="nav-right">
+
+      <a routerLink="/contact" class="nav-btn">
+        Get Started
+        <span>↗</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-btn" type="button" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </div>
+</header>
+
