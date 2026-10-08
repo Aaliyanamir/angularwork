@@ -1,3 +1,181 @@
-p{
-    color: red;
+/* 🌌 Container Setup */
+.about-page-wrapper {
+  background-color: #0b0f19; /* Extreme dark deep space background */
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  position: relative;
+  overflow: hidden; /* Glow patterns ko screen se bahar clip karne ke liye */
+}
+
+/* 🔮 Neon Glow Orbs (Behind the Glass) */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.orb-1 {
+  width: 350px;
+  height: 350px;
+  background: #3b82f6; /* Blue Glow */
+  top: 15%;
+  left: 15%;
+}
+
+.orb-2 {
+  width: 300px;
+  height: 300px;
+  background: #a855f7; /* Purple Glow */
+  bottom: 15%;
+  right: 15%;
+}
+
+/* 🪟 Glassmorphism Main Card */
+.about-glass-card {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.03); /* Translucent White Alpha */
+  backdrop-filter: blur(16px) saturate(120%); /* Main Glass Blur Effect */
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Frosted Glass Edge border */
+  border-radius: 24px;
+  padding: 4rem 3rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* 🏷️ Badge Style */
+.glass-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+/* 📝 Typography */
+.about-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+}
+
+/* Glowing text gradient */
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #c084fc 100%);
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 🎛️ Inner Layout Columns */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.grid-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Subtle highlight layout on hovering grid box */
+.grid-box:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.box-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.grid-box h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.75rem 0;
+  color: #f1f5f9;
+}
+
+.grid-box p {
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* 📊 Embedded Bottom Metrics row */
+.about-footer-metrics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 2.5rem;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.metric p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.metric-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 📱 Responsive view adjustments */
+@media (max-width: 768px) {
+  .about-glass-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .about-header h1 {
+    font-size: 2.2rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }

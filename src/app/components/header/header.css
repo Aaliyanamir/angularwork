@@ -1,0 +1,71 @@
+/* Navbar Background and Wrapper Setup */
+.navbar {
+  background-color: #0f172a; /* Deep dark Slate background */
+  border-bottom: 1px solid #1e293b; /* Subtle separator line */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Links ko distribute karne ke liye */
+}
+
+/* 🏷️ Logo Styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #3b82f6; /* Highlighted Light Blue text */
+}
+
+/* 🗺️ Navigation Links Styling */
+nav {
+  display: flex;
+  gap: 2rem; /* Links ke beech ka spacing */
+}
+
+nav a {
+  color: #94a3b8; /* Soft muted gray for resting state */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Link pe cursor laane par color active white hoga */
+nav a:hover {
+  color: #ffffff;
+}
+
+/* 🚀 Get Started Button Styling */
+.nav-btn {
+  background-color: #3b82f6; /* Vibrant Blue */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Button Hover State */
+.nav-btn:hover {
+  background-color: #2563eb; /* Slightly darker blue */
+  transform: translateY(-1px);
+}
+
+.nav-btn:active {
+  transform: translateY(0);
+}
